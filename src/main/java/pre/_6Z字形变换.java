@@ -1,7 +1,6 @@
 package pre;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class _6Z字形变换 {
@@ -30,4 +29,6 @@ public class _6Z字形变换 {
         System.out.println(paypalishiring);
     }
 
+    public static class _37解数独 {
+    }
 }

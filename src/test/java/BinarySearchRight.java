@@ -4,8 +4,8 @@ public class BinarySearchRight {
         int[] nums = new int[] { 1, 2, 3 , 4, 4, 4, 4, 4,5};
         int res = binarySearchLeft(nums, 4);
         System.out.println(res);
-        res = binarySearchRight(nums, 4);
-        System.out.println(res);
+//        res = binarySearchRight(nums, 4);
+//        System.out.println(res);
     }
 
     private static int binarySearchLeft(int[] nums, int target) {
@@ -13,8 +13,7 @@ public class BinarySearchRight {
         while (l < r) {
             int mid = l + (r - l) / 2;
             if (nums[mid] >= target) {
-
-                r = mid;
+                r = mid - 1;
             } else {
                 result = mid;
                 l = mid + 1;
@@ -23,21 +22,6 @@ public class BinarySearchRight {
         return result;
     }
 
-    private static int binarySearchRight(int[] nums, int target) {
-        int l = 0, r = nums.length, result = -1;
-        while (l < r) {
-            int mid = l + (r - l) / 2;
-            if (nums[mid] <= target) {
-
-                l = mid + 1;
-            }
-            else {
-                result = mid;
-                r = mid;
-            }
-        }
-        return result;
-    }
 
 
 

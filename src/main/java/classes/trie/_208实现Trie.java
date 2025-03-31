@@ -1,5 +1,7 @@
 package classes.trie;
 
+import java.util.PriorityQueue;
+
 public class _208实现Trie {
 
     class Node {
@@ -33,6 +35,7 @@ public class _208实现Trie {
             cur = node;
         }
         if (cur.end) return true;
+
         return false;
     }
 

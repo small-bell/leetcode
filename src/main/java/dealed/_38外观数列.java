@@ -28,7 +28,4 @@ public class _38外观数列 {
         return res;
     }
 
-    public static void main(String[] args) {
-        new _38外观数列().countAndSay(4);
-    }
 }

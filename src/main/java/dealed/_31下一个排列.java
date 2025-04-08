@@ -1,9 +1,8 @@
 package dealed;
 
 public class _31下一个排列 {
-    // 纯纯一个找规律题
+    // 纯纯一个找规律题先找最后一个转弯值，再从右面找比他大的第一个数字进行反转，把cur后面的所有的进行反转
     public void nextPermutation(int[] nums) {
-
         int cur = -1;
         for (int i = nums.length - 2; i >= 0; i--) {
             if (nums[i] < nums[i + 1]) {
@@ -11,7 +10,6 @@ public class _31下一个排列 {
                 break;
             }
         }
-
         if (cur >= 0) {
             int swp = 0;
             for (int i = nums.length - 1; i >= 0 ; i--) {

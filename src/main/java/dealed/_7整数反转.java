@@ -14,9 +14,4 @@ public class _7整数反转 {
         return res ;
     }
 
-    public static void main(String[] args) {
-        int reverse = new _7整数反转().reverse(123);
-        System.out.println(reverse);
-    }
-
 }

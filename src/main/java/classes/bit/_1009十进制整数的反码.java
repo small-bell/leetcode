@@ -1,4 +1,4 @@
-package classes;
+package classes.bit;
 
 import java.util.*;
 import java.lang.*;
